@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Onboarding</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-top: 100px;
+            opacity: 0;
+            animation: fade-in 1s ease-in-out forwards;
+        }
+
+        p {
+            color: #666;
+            font-size: 18px;
+            transform: translateX(-100%);
+            animation: slide-in 1s ease-in-out forwards;
+        }
+
+        .dancing-cartoon {
+            animation: dance 2s infinite;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide-in {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes dance {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(10deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Your app is onboarded</h1>
+    <p>Please return to the app.</p>
+</body>
+</html>
